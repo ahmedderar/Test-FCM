@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseMessaging.getInstance().setAutoInitEnabled(true);
         TextView textView = findViewById(R.id.textview);
         Bundle extras = getIntent().getExtras();
-        FirebaseMessaging.getInstance().subscribeToTopic("13");
+        FirebaseMessaging.getInstance().subscribeToTopic("12");
         if(extras != null){
             String type = extras.getString("type");
             String count = extras.getString("count");
